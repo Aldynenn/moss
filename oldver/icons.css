@@ -1,0 +1,49 @@
+.check, .check2, .close, .close2 {
+    display: block;
+    width: 2em;
+    height: 2em;
+    border-style: solid;
+    border-width: 0.2em;
+    border-color: currentColor;
+    border-radius: 1em;
+    position: relative;
+    box-shadow: 0px 0px 4px -2px currentColor;
+    box-shadow: inset 0px 0px 4px -2px currentColor;
+    transition: 150ms;
+    transition-property: color;
+}
+.check::before, .check2::before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 0.8em;
+    border-color: currentColor;
+    border-right: solid;
+    border-bottom: solid;
+    border-width: 0.2em;
+    width: 0.4em;
+    left: 0.45em;
+    top: 0.2em;
+    transform: rotate(45deg);
+}
+.close::before,
+.close::after,
+.close2::before,
+.close2::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 0.2em;
+    background-color: currentColor;
+    border: hidden;
+    width: 1.2em;
+    left: 0.18em;
+    top: 0.7em;
+    transform: rotate(45deg);
+}
+.close::after, .close2::after {
+    transform: rotate(-45deg);
+}
+.check2, .close2 {
+    border-radius: 0em;
+}

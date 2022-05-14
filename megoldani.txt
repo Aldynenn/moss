@@ -1,0 +1,3 @@
+//alkalmak mikor nem értettem saját magam régi hülyeségét: 0
+
+padding és margin css-ek rendezése, hogy ki tudják ütni egymást
